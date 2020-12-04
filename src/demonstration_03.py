@@ -28,7 +28,7 @@ def multiply_nums(nums):
     nums_array = nums.split(', ')
     final_val = 1
     for num in nums_array:
-        final_val *= int(num)
+        final_val *= int(num) #turns numbers into integers
     return final_val
 
 print(multiply_nums("54, 75, 453, 0"))

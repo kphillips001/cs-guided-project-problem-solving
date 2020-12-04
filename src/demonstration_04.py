@@ -1,9 +1,7 @@
 """
 Challenge #4:
 
-Create a function that changes specific words into emoticons. Given a sentence
-as a string, replace the words `smile`, `grin`, `sad`, and `mad` with their
-corresponding emoticons.
+Create a function that changes specific words into emoticons. Given a sentence as a string, replace the words `smile`, `grin`, `sad`, and `mad` with their corresponding emoticons.
 
 word -> emoticon
 ---
@@ -22,7 +20,15 @@ Notes:
 - Try to solve this without using conditional statements like if/else.
 """
 
+# Plan => Make new strings? Change original string? 
+# Can use .replace method
 
 def emotify(txt):
     # Your code here
+    txt = txt.replace("smile", ":D").replace("grin", ":)").replace("sad", ":(")
+        
+    return txt
 
+print(emotify("Make me smile"))
+print(emotify("Make me grin"))
+print(emotify("Make me sad"))
